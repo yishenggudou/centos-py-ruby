@@ -1,5 +1,5 @@
 FROM centos:6
-MAINTAINER <kuiseng.zhb>
+MAINTAINER <timger>
 RUN yum -y install screen zlib-dev openssl-devel sqlite-devel bzip2-devel xz-libs mysql libffi-devel graphviz-devel mysql-devel centos-release-SCL epel-release
 RUN yum -y install python27 python27-python-devel python27-python-setuptools python27-python-tools npm vim wget nginx apache-maven
 RUN scl enable python27 bash
