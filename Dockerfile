@@ -7,7 +7,6 @@ RUN yum --enablerepo=centos-sclo-rh -y install rh-ruby22 rh-ruby22-ruby-devel
 RUN scl enable rh-ruby22 bash
 RUN npm -g install bower grunt grunt-cli@v1.1.0 i
 WORKDIR  /home/admin
-ADD requirements.txt /home/admin/requirements.txt
 RUN npm install -g n
 RUN n v8.1.3
 RUN wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
