@@ -6,4 +6,5 @@ services:
 before_install:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - docker build -t yishenggudou/centos-py-ruby:beta   .
+  - pwd
   - docker push yishenggudou/centos-py-ruby:beta
